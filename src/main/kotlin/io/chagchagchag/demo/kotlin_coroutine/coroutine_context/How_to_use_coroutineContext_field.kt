@@ -23,4 +23,6 @@ private suspend fun inner(){
     log.info("Continuation 객체 내의 context = ${continuation.context}")
     continuation.resume("OK")
   }
+
+  log.info("inner 함수 내애서의 result = $result")
 }
